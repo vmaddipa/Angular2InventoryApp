@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {EventEmitter} from '@angular/core';
-import  {Product} from "../app.model";
+import {Product} from '../app.model';
 @Component({
   selector: 'products-list',
   templateUrl: './products-list.component.html',
@@ -9,7 +9,7 @@ import  {Product} from "../app.model";
 })
 export class ProductsListComponent {
 @Input() productList: Product[];
- 
+
  /**
  * @output onProductSelected - outputs the current
  * Product whenever a new Product is selected
@@ -22,10 +22,9 @@ export class ProductsListComponent {
  */
  private currentProduct: Product;
 
-   constructor() 
-   { 
+   constructor() {
       this.onProductSelected = new EventEmitter();
- }
+    }
 
  clicked(product: Product): void {
  this.currentProduct = product;
@@ -40,4 +39,4 @@ return false;
  return product.sku === this.currentProduct.sku;
  }
 }
-//page 117
+// page 117

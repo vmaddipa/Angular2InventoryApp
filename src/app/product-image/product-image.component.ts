@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{Product} from '../app.model';
+import {Product} from '../app.model';
 @Component({
   selector: 'product-image',
   host: {class: 'ui small image'},
@@ -11,6 +11,6 @@ export class ProductImageComponent  {
 product: Product;
   constructor() { }
 
-  
+
 
 }

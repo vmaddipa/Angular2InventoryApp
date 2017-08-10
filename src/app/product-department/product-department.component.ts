@@ -10,6 +10,4 @@ export class ProductDepartmentComponent  {
 product: Product;
   constructor() { }
 
-  
-
 }
