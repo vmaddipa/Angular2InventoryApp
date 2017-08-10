@@ -1,3 +1,5 @@
+import {EventEmitter} from '@angular/core';
+
 export class Product {
   constructor(
     public sku: string,
@@ -7,3 +9,4 @@ export class Product {
     public price: number) {
   }
 }
+
